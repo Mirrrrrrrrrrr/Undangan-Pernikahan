@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1269AB">
+  <meta name="description" content="Frieren & Himmel — perjalanan panjang menuju keabadian kita. Undangan pernikahan.">
+  <title>☁ Frieren & Himmel ☁ — Love Among The Clouds</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="locked">
+  <noscript>
+    <div class="noscript-note">Aktifkan JavaScript untuk membuka undangan dan menikmati interaksinya.</div>
+  </noscript>
+
+  <!-- COVER -->
+  <section id="cover" class="cover">
+    <img class="cover-background" src="assets/pics/sky-bg.jpg" alt="">
+    <div class="cover-door door-left"></div>
+    <div class="cover-door door-right"></div>
+    <img class="cover-cloud cloud-left" src="assets/pics/clouds-2.webp" alt="">
+    <img class="cover-cloud cloud-right" src="assets/pics/clouds-2.webp" alt="">
+    <div class="cover-inner">
+      <div class="cover-top">
+        <span class="fine-label">THE WEDDING CELEBRATION</span>
+        <span class="cover-edition">FRIEREN & HIMMEL</span>
+      </div>
+      <div class="cover-main">
+        <div class="cover-portrait">
+          <div class="portrait-border"></div>
+          <img src="assets/pics/frieren-&-himmel-wedding.jpeg" alt="Foto ilustrasi pasangan Frieren dan Himmel di katedral" width="1024" height="1536" fetchpriority="high">
+          <span class="orbit-label">TOGETHER IS A BEAUTIFUL PLACE TO BE</span>
+        </div>
+        <div class="cover-copy">
+          <span class="ornament">☁</span>
+          <p class="eyebrow">LOVE AMONG THE CLOUDS</p>
+          <h1 id="coverTitle">
+            <span>Frieren</span>
+            <em>&</em>
+            <span>Himmel</span>
+          </h1>
+          <div class="cover-date" data-date="long">31 Oktober 2026</div>
+          <div class="guest-block">
+            <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+            <strong id="coverGuest">Tamu Undangan</strong>
+          </div>
+          <button id="openInvitation" class="button button-gold cover-cta-button" type="button">
+            <span class="icon" data-icon="envelope"></span>Buka Undangan<span>↗</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="petals" class="petal-layer"></div>
+
+  <div id="invitationContent" inert>
+    <div id="readingProgress" class="reading-progress"></div>
+
+    <!-- NAVBAR -->
+    <header class="site-header navbar fixed-top mx-auto mt-3 px-3 px-lg-4 rounded-pill shadow">
+      <a href="#opening" class="navbar-brand wordmark m-0">Frieren<span>&</span>Himmel</a>
+      <nav class="nav nav-pills d-none d-lg-flex small">
+        <a class="nav-link" href="#couple">Mempelai</a>
+        <a class="nav-link" href="#events">Acara</a>
+        <a class="nav-link" href="#gallery">Galeri</a>
+        <a class="nav-link" href="#gift">Hadiah & Doa</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PEMBUKA + COUNTDOWN -->
+      <section id="opening" class="top-section position-relative overflow-hidden section-anchor">
+        <img class="top-bg" src="assets/pics/sky-bg.jpg" alt="">
+        <img class="top-cloud" src="assets/pics/clouds-2.webp" alt="">
+        <div class="container position-relative">
+          <div class="row align-items-center justify-content-center g-4 g-md-5">
+            <div class="col-7 col-sm-5 col-md-4 col-lg-3 reveal">
+              <div class="top-photo overflow-hidden shadow">
+                <img class="w-100 h-100 object-fit-cover" src="assets/pics/frieren-&-himmel-wedding.jpeg" alt="Foto ilustrasi Frieren dan Himmel di bawah langit yang sama" width="1024" height="1536">
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-6 text-center text-md-start reveal">
+              <p class="eyebrow">THE WEDDING OF FRIEREN & HIMMEL</p>
+              <h2 class="top-title display-5 mb-3">Di antara bentang awan,<br>kita <em>menemukan rumah.</em></h2>
+              <p class="mb-3">Menembus waktu dan jarak, cinta ini menemukan takdirnya di bawah langit yang sama. Kami mengundangmu merayakan awal perjalanan abadi kami.</p>
+              <time class="badge rounded-pill text-bg-light border fw-normal fs-6 text-primary" data-date="long"></time>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-4">
+            <div class="col-lg-10 col-xl-9">
+              <div class="countdown-card reveal d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 p-4 rounded-4 shadow text-white text-center text-md-start">
+                <div>
+                  <p class="eyebrow mb-1">EVERY SECOND BRINGS US CLOSER</p>
+                  <p id="countdownMessage" class="small mb-0"></p>
+                </div>
+                <div class="countdown d-flex align-items-center gap-2">
+                  <div class="text-center"><span id="days">—</span><small>HARI</small></div>
+                  <b>:</b>
+                  <div class="text-center"><span id="hours">—</span><small>JAM</small></div>
+                  <b>:</b>
+                  <div class="text-center"><span id="minutes">—</span><small>MENIT</small></div>
+                  <b>:</b>
+                  <div class="text-center"><span id="seconds">—</span><small>DETIK</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEMPELAI -->
+      <section id="couple" class="py-5 section-anchor">
+        <div class="container">
+          <div class="text-center mb-4 reveal">
+            <h2 class="fs-1">Yang berbahagia.</h2>
+          </div>
+          <div class="row g-3 align-items-center justify-content-center">
+            <div class="col-md-5 col-lg-4 reveal">
+              <article class="text-center">
+                <div class="position-relative overflow-hidden rounded-4 shadow">
+                  <div class="ratio" style="--bs-aspect-ratio: 62.5%">
+                    <img class="object-fit-cover" src="assets/pics/frieren.jpg" alt="Potret ilustrasi Frieren" loading="lazy" width="736" height="458">
+                  </div>
+                  <span class="badge rounded-pill text-bg-light position-absolute top-0 start-0 m-3">THE BRIDE</span>
+                  <span class="handwritten position-absolute bottom-0 start-0 end-0 px-3 pb-2 pt-5 text-white">a gentle kind of love</span>
+                </div>
+                <p class="eyebrow mt-3 mb-0">MEMPELAI WANITA</p>
+                <h3 class="mb-0" data-bind="bride.fullName"></h3>
+              </article>
+            </div>
+            <div class="col-md-auto text-center">
+              <span class="couple-ampersand">&</span>
+            </div>
+            <div class="col-md-5 col-lg-4 reveal">
+              <article class="text-center">
+                <div class="position-relative overflow-hidden rounded-4 shadow">
+                  <div class="ratio" style="--bs-aspect-ratio: 62.5%">
+                    <img class="object-fit-cover" src="assets/pics/himmel.jpg" alt="Potret ilustrasi Himmel" loading="lazy" width="736" height="458">
+                  </div>
+                  <span class="badge rounded-pill text-bg-light position-absolute top-0 start-0 m-3">THE GROOM</span>
+                  <span class="handwritten position-absolute bottom-0 start-0 end-0 px-3 pb-2 pt-5 text-white">my favorite place is you</span>
+                </div>
+                <p class="eyebrow mt-3 mb-0">MEMPELAI PRIA</p>
+                <h3 class="mb-0" data-bind="groom.fullName"></h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACARA -->
+      <section id="events" class="py-5 bg-body-secondary section-anchor">
+        <div class="container">
+          <div class="text-center mb-4 reveal">
+            <h2 class="fs-1">Satu hari, <em>sejuta kenangan.</em></h2>
+            <p class="mx-auto mb-0 small event-lead">Merupakan kebahagiaan bagi kami apabila kamu berkenan hadir dan memberikan doa restu.</p>
+          </div>
+          <article class="card event-card border-0 shadow overflow-hidden mx-auto reveal">
+            <div class="row g-0">
+              <div class="col-md-5 p-4 d-flex flex-column justify-content-center align-items-start">
+                <p class="eyebrow mb-2">LOKASI ACARA</p>
+                <h3 class="fs-2" data-bind="venue.name"></h3>
+                <p class="small mb-3" data-bind="venue.address"></p>
+                <ul id="eventSchedule" class="list-unstyled row g-2 w-100 mb-3"></ul>
+                <a id="mapLink" class="btn btn-primary rounded-pill px-4" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>
+              </div>
+              <div class="col-md-7 order-md-first">
+                <iframe id="eventMap" class="w-100 h-100 border-0" title="Peta lokasi acara" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- GALERI -->
+      <section id="gallery" class="py-5 section-anchor">
+        <div class="container">
+          <div class="text-center mb-4 reveal">
+            <h2 class="fs-1">Momen kecil, <em>cinta yang besar.</em></h2>
+          </div>
+          <div id="galleryGrid" class="gallery-grid row g-2 justify-content-center mx-auto"></div>
+        </div>
+      </section>
+
+      <!-- HADIAH & UCAPAN -->
+      <section id="gift" class="py-5 bg-body-secondary section-anchor">
+        <div class="container">
+          <div class="text-center mb-4 reveal">
+            <h2 class="fs-1">Doamu, hadiah <em>terindah.</em></h2>
+            <p class="mx-auto mb-0 small event-lead">Jika ingin berbagi tanda kasih, pindai kode Dana di bawah ini, lalu titipkan doa untuk kami.</p>
+          </div>
+          <div class="gift-grid row g-4 justify-content-center mx-auto">
+            <div class="col-sm-8 col-md-5 col-lg-4 reveal">
+              <figure class="card border-0 shadow text-center p-3 mb-0">
+                <figcaption>
+                  <strong class="dana-title d-block">DANA</strong>
+                  <small class="text-body-secondary">SCAN UNTUK BERBAGI TANDA KASIH</small>
+                </figcaption>
+                <div class="dana-frame ratio ratio-1x1 my-3">
+                  <img id="danaImage" class="object-fit-contain bg-white" alt="Kode Dana untuk tanda kasih Frieren dan Himmel" width="600" height="600">
+                  <p id="danaEmpty" class="dana-empty" hidden>Letakkan gambar Dana di<br><code id="danaPath"></code></p>
+                </div>
+                <p class="small mb-3" data-bind="dana.name"></p>
+                <a id="danaDownload" class="btn btn-primary rounded-pill" download>Unduh Dana</a>
+              </figure>
+            </div>
+
+            <div class="col-md-7 col-lg-8 reveal">
+              <form id="wishForm">
+                <div class="mb-3">
+                  <label class="form-label" for="wishName">Nama pengirim</label>
+                  <input id="wishName" class="form-control" name="name" autocomplete="name" minlength="2" maxlength="80" required placeholder="Namamu">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="wishText">Ucapan & doa</label>
+                  <textarea id="wishText" class="form-control" name="message" minlength="5" maxlength="500" required rows="3" placeholder="Semoga kisah ini selalu dipenuhi cinta…"></textarea>
+                  <div class="form-text text-end"><span id="wishCounter">0 / 500</span></div>
+                </div>
+                <button class="btn btn-primary rounded-pill w-100" type="submit">Simpan ucapan ↗</button>
+                <p id="wishStatus" class="form-text mt-2 mb-0"></p>
+              </form>
+
+              <div class="d-flex justify-content-between small text-uppercase text-body-secondary mt-4 mb-2">
+                <span>Ucapan dari tamu</span>
+                <span id="wishCount">0 ucapan</span>
+              </div>
+              <div id="wishList" class="wish-list overflow-y-auto"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PENUTUP -->
+    <footer class="site-footer text-bg-primary bg-gradient text-center py-5">
+      <div class="container">
+        <span class="ornament">☁</span>
+        <h2 class="fs-1">Terima <em>kasih.</em></h2>
+        <p class="mx-auto small" data-bind="closing"></p>
+        <span class="footer-names d-block mb-3">Frieren <em>&</em> Himmel</span>
+        <a class="small text-white-50" href="#opening">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+
+    <!-- NAVIGASI BAWAH (khusus HP) -->
+    <nav class="bottom-nav nav nav-fill d-md-none">
+      <a class="nav-link active" href="#opening"><span class="icon" data-icon="home"></span><span>Awal</span></a>
+      <a class="nav-link" href="#couple"><span class="icon" data-icon="heart"></span><span>Mempelai</span></a>
+      <a class="nav-link" href="#events"><span class="icon" data-icon="calendar"></span><span>Acara</span></a>
+      <a class="nav-link" href="#gallery"><span class="icon" data-icon="image"></span><span>Galeri</span></a>
+      <a class="nav-link" href="#gift"><span class="icon" data-icon="gift"></span><span>Hadiah</span></a>
+    </nav>
+  </div>
+
+  <!-- AUDIO PLAYER -->
+  <audio id="weddingMusic" preload="none" loop></audio>
+  <div id="musicPlayer" class="player border shadow" hidden>
+    <button id="musicControl" class="player-btn btn btn-primary rounded-circle p-0" type="button">▶</button>
+    <div class="flex-grow-1 overflow-hidden">
+      <strong class="player-title d-block text-truncate">The Story Of Us (Cover)</strong>
+      <div class="d-flex justify-content-between small text-body-secondary"><span>Jelly</span><span id="playerTime">0:00</span></div>
+      <div id="playerBar" class="progress mt-1">
+        <div id="playerProgress" class="progress-bar"></div>
+      </div>
+    </div>
+    <span class="player-wave"><i></i><i></i><i></i></span>
+  </div>
+
+  <div id="musicNotice" class="music-notice" hidden>
+    <button id="dismissMusicNotice" class="notice-close" type="button">×</button>
+    <strong>Musik undangan</strong>
+    <p id="musicMessage"></p>
+    <label class="text-link" for="localMusic">Pilih audio dari perangkat ↗</label>
+    <input id="localMusic" type="file" accept="audio/*" class="visually-hidden">
+  </div>
+
+  <!-- MODAL GALERI -->
+  <div id="galleryModal" class="modal fade gallery-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <button type="button" class="gallery-close" data-bs-dismiss="modal">×</button>
+        <img id="lightboxImage" alt="">
+        <div class="lightbox-bar">
+          <button id="previousPhoto" type="button">←</button>
+          <p id="galleryCaption"></p>
+          <button id="nextPhoto" type="button">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
