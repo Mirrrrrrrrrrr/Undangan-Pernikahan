@@ -12,7 +12,6 @@ Proyek ini adalah *template* undangan pernikahan digital berbasis web dengan tem
 * **Pemutar Musik Latar**: Pemutar musik dengan animasi gelombang suara (*equalizer*) di sudut layar[cite: 6, 8]. Jika file musik gagal dimuat, tamu dapat memilih lagu dari perangkat mereka sendiri[cite: 6, 7].
 * **Galeri Foto (Lightbox)**: Galeri foto dengan fitur *modal lightbox* yang mendukung navigasi *swipe* (usap) di layar sentuh dan panah *keyboard*[cite: 6, 7].
 * **Buku Tamu (*Guestbook*)**: Formulir ucapan dan doa yang dinamis. (Catatan: Versi saat ini menyimpan data menggunakan *LocalStorage* peramban / demo-mode)[cite: 6, 7].
-* **Simpan ke Kalender**: Tombol untuk mengunduh jadwal acara dalam format `.ics` agar tamu dapat menyimpannya ke Google/Apple Calendar.
 * **Hadiah Digital**: Integrasi QR Code DANA untuk penerimaan tanda kasih secara digital[cite: 6, 7].
 
 ---
