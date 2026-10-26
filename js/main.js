@@ -34,6 +34,7 @@ const config = {
 };
 
 const firstEvent = config.schedule[0];
+const prefersReducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // ==================== 2. FUNGSI BANTU ====================
 const $ = id => document.getElementById(id);
