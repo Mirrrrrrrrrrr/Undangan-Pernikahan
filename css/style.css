@@ -546,12 +546,6 @@ h1, h2, h3 {
   animation-delay: var(--delay, 0s);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .petal-layer {
-    display: none;
-  }
-}
-
 @media (max-width: 1199px) {
   .cover-main {
     gap: 45px;
@@ -1150,19 +1144,5 @@ h1, h2, h3 {
   }
   .countdown > div {
     min-width: 46px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-  .petal-layer {
-    display: none;
   }
 }
